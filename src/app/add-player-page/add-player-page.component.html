@@ -5,10 +5,10 @@
                 Imię gracza:
             </section>
             <mat-form-field appearance="outline">
-                <input matInput>
+                <input matInput [(ngModel)]="player.name" name="first">
             </mat-form-field>
             <section>
-                <button mat-stroked-button>
+                <button mat-stroked-button (click)="onClick()">
                     ZAPISZ
                 </button>
             </section>
